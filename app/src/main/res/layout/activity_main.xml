@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@drawable/img">
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/LayoutName"
+      android:layout_width="300dp"
+      android:layout_height="83dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="32dp"
+      android:hint="e-mail"
+      android:textColorHint="@color/white"
+      app:placeholderTextColor="@color/white"
+      app:boxBackgroundColor="#0FFFFFFF"
+      app:boxBackgroundMode="outline"
+      app:boxCornerRadiusBottomEnd="5dp"
+      app:boxCornerRadiusBottomStart="5dp"
+      app:boxCornerRadiusTopEnd="5dp"
+      app:boxCornerRadiusTopStart="5dp"
+      app:endIconMode="clear_text"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:placeholderText="example@gmail.com"
+      app:startIconDrawable="@drawable/baseline_person_24"
+      app:startIconTint="#673AB7">
+
+   <com.google.android.material.textfield.TextInputEditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="textEmailAddress"
+       android:textColor="@color/white"
+       android:paddingStart="50dp" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/textInputLayout"
+      android:layout_width="302dp"
+      android:layout_height="83dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="32dp"
+      android:hint="Password"
+      android:textColorHint="@color/white"
+      app:boxCornerRadiusBottomEnd="5dp"
+      app:boxCornerRadiusBottomStart="5dp"
+      app:boxCornerRadiusTopEnd="5dp"
+      app:boxCornerRadiusTopStart="5dp"
+      app:counterEnabled="true"
+      app:counterMaxLength="10"
+      app:endIconMode="password_toggle"
+      app:endIconTint="#673AB7"
+      app:errorEnabled="true"
+      app:helperText="Enter Strong Password"
+      app:helperTextEnabled="true"
+      app:helperTextTextColor="#009688"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/LayoutName"
+      app:startIconDrawable="@drawable/baseline_lock_24"
+      app:startIconTint="#673AB7">
+
+   <com.google.android.material.textfield.TextInputEditText
+       android:id="@+id/LayoutPassword"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="textPassword"
+       android:paddingStart="50dp"
+       android:textColor="@color/white" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/layoutNumber"
+      android:layout_width="300dp"
+      android:layout_height="83dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="32dp"
+      app:counterEnabled="true"
+      app:counterMaxLength="10"
+      app:endIconMode="clear_text"
+      android:textColorHint="@color/white"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+      app:prefixText="+234|"
+      app:prefixTextColor="@color/white"
+      app:startIconDrawable="@drawable/baseline_phone_24"
+      app:startIconTint="#673AB7">
+
+   <com.google.android.material.textfield.TextInputEditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Phone Number"
+       android:inputType="number"
+       android:textColor="@color/white"
+       android:paddingStart="50dp" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/button"
+      android:layout_width="300dp"
+      android:layout_height="54dp"
+      app:cornerRadius="5dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="64dp"
+      android:layout_marginEnd="32dp"
+      android:text="Login"
+      android:letterSpacing=".1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/layoutNumber" />
+ </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
